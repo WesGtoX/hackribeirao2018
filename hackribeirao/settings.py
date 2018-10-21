@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'core',
+    'geracao_prova',
+    'correcao_prova',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +129,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'static'
 ]
+
+#CONFIGURANDO O CAMINHO DA PASTA ONDE SERÁ SALVA AS IMAGENS;
+#CONFIGURANDO A DISPOSIÇÃO DAS IMAGENS, NA PASTA.
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join('media')
+
+TEMPLATE_DIRS = (
+    BASE_DIR + '/templates/',
+)
