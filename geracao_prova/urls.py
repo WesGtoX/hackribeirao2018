@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import IndexPage, questao, prova
+from .views import IndexPage, questao, prova, sobre
 from django.views.generic.base import TemplateView
 
 
@@ -12,4 +12,8 @@ urlpatterns = [
 
     #url prova
     path('prova/', prova, name='prova'),
+
+    #url sobre
+    path('sobre/', sobre, name='sobre'),
+
 ]
