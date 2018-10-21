@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="SENECA - Sistema para gerenciamento estudantil publico">
+    <meta name="author" content="Grupo 8">
 
-    <title>SB Admin - Blank Page</title>
+    <title>SENECA</title>
 
     <!-- Bootstrap core CSS-->
     <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
       <!-- Navbar Search -->
       <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
           <!--VAZIO POIS MANTEM O MENU DO USUARIO NO CANTO DIREITO-->
-        </form>
+      </form>
   
         <!-- Navbar -->
         <ul class="navbar-nav ml-auto ml-md-0">
@@ -96,18 +96,30 @@
         <div class="container-fluid">
 
           <!-- Page Content -->
-          <form class="needs-validation">
-                <div class="form-row">
-                  <div class="col-md-4 mb-3">
-                    <label for="validationCustom01">DESCRIÇÃO</label>
-                    <textarea class="form-control"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlFile1">Example file input</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                <button class="btn btn-primary" type="submit">Submit form</button>
-              </form>
+          <form class="needs-validation" action="{% url 'questao' %}" method="POST">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">Código:</label>
+                  {{questForm.codigo}}
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">Descrição:</label>
+                  {{questForm.descricao}}
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationCustom01">Disciplina:</label>
+                  {{questForm.disciplina}}
+                </div>
+              </div>
+              <div class="custom-file">
+                {{questForm.imagem}}
+                <label class="custom-file-label" for="customFile">Procurar...</label>
+              </div>
+              <hr>
+              <button class="btn btn-primary float-right" type="submit">Gravar</button>
+              <button class="btn btn-danger float-left">Limpar</button>
+          </form>
 
         </div>
         <!-- /.container-fluid -->
@@ -160,6 +172,7 @@
 
     <!-- Custom scripts for all pages-->
     <script src="../static/js/sb-admin.min.js"></script>
+    <script src="../static/js/image-field.js"></script>
 
   </body>
 
