@@ -7,8 +7,6 @@ from django.http import HttpResponseRedirect
 from django.views.generic import TemplateView
 
 
-from reportlab.pdfgen import canvas
-
 # Create your views here.
 
 '''
@@ -55,38 +53,9 @@ def prova(request):
             pForm.save()
             return redirect('questao')
     print(p)
-
-    def main(args):
-    
-     
-        cnv = canvas.Canvas(pdfProva, pagesize=A4)
-        
-        #desenha o perímetro do painel
-        desenhaPerimetro(cnv,offsetX ,offsetY,
-                comprimento,largura)
-                
-                
-        #escreve os textos no painel
-        cnv.setFont('Times-Bold',16)
-        escreveTextoCentralizadoX(cnv, inicioTexto1Y, texto1)
-            
-        cnv.setFont('Times-Bold',14)
-        escreveTextoCentralizadoX(cnv, inicioTexto2Y, texto2)           
-                
-        
-        #desenha os furos para o autofalante
-        desenhaAutofalante(cnv)
-    
-    
-        #desenha o furo e textos da chave de ganho
-        chaveSeletoraGanho(cnv)  
-        
-        
-        cnv.save()
-        return 0
     
     return render(request, 'prova/provas.html', {'pForm': pForm})
 
 
-
-
+def sobre(request):
+    return render(request, 'sobre/sobre.html')
