@@ -29,6 +29,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
   </head>
 
   <body id="page-top">
@@ -105,12 +107,13 @@
           <form class="needs-validation" action="" method="POST">
             <div class="form-row">
             {% csrf_token %}
-              <div class="col-md-12 mb-3" id="conteudo">
+              <div class="col-md-12 mb-3">
                 {{pForm.questoes}}
               </div>
               <div id="editor"></div>
-              <button id="btGerarPDF">gerar PDF</button>
-            </div>   
+              <button id="cmd">gerar PDF</button>
+            </div> 
+              
                 <script>
                   $('#summernote').summernote({
                     placeholder: '',
@@ -118,8 +121,9 @@
                     height: 100
                   });
                 </script>
-              
+
               <hr>
+
               <button class="btn btn-primary float-right" type="submit">Gravar</button>
               <button class="btn btn-danger float-left">Limpar</button>
 
@@ -179,6 +183,7 @@
     <script src="../static/js/image-field.js"></script>
 
     <script>
+            
       var doc = new jsPDF();
       var specialElementHandlers = {
           '#editor': function (element, renderer) {
@@ -186,13 +191,16 @@
           }
       };
 
-      $('#btGerarPDF').click(function () {
-          doc.fromHTML($('#conteudo').html(), 15, 15, {
+      $('#cmd').click(function () {   
+          doc.fromHTML($('#cont').html(), 15, 15, {
               'width': 170,
                   'elementHandlers': specialElementHandlers
           });
-          doc.save('exemplo-pdf.pdf');
+          doc.save('provaDOC.pdf');
       });
+
+      // This code is collected but useful, click below to jsfiddle link.
+
     </script>
 
   </body>
