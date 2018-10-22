@@ -9,7 +9,7 @@ import argparse
 import imutils
 import cv2
 
-image = 'images/test_01.png'
+image = '../static/images/c_provas/test_01.png'
 args = {'image': image}
 
 # construct the argument parse and parse the arguments

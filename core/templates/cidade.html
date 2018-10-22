@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Seneca | Soluções Educacionais</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img src="https://trello-attachments.s3.amazonaws.com/5bcbd08141242958eda62dcc/5bcc64127969e47a639d5918/fc0f69ac18f5563f58ace7cacd1e5f25/Logo3.png" 
+          alt="" style="width: 165px; height: 70px;">
+        </a>
+        <button class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarResponsive" 
+        aria-controls="navbarResponsive" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#busca">Busca</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/index">Inicio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Seneca - Soluções Educacionais</h1>
+        <p class="lead">
+          Nós otimizamos o trabalho do professor na geração de provas e relatórios de desempenho, <br>
+          desenvolvendo um sistema que diminui o esforço dele e da instituição de ensino.
+        </p>
+      </div>
+    </header>
+
+    <section id="busca">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto float-left">
+                <div class="card-deck" >
+                    <div class="card" style="background-color: #b4b4b3;">
+                    <div class="card-body">
+                        <div class="card">
+                            <h5 class="card-header">E.E. Prof Sebastião Fernandes Palma</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Relatório</h5>
+                                <p class="card-text">
+                                    Clique no botão abaixo, para saber mais.
+                                </p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                        Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Relatório em Gráficos
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <div id="content-wrapper">
+
+                                <div class="container-fluid">
+                        
+                                  <!-- Page Content -->
+                                    <!-- Area Chart Example-->
+                                  <p class="text-justify" style="font-size:30px;"><b>E.E. Prof Sebastião Fernandes Palma</b></p>
+                                  <div class="card mb-3">
+                                        <div class="card-header">
+                                          <i class="fas fa-chart-area"></i>
+                                          Rendimento de Matemática</div>
+                                        <div class="card-body">
+                                          <canvas id="myAreaChart" width="100%" height="30"></canvas>
+                                        </div>
+                                        <div class="card-footer small text-muted">Atualizado hoje às 11:59 PM</div>
+                                      </div>
+                            
+                                      <div class="row">
+                                        <div class="col-lg-8">
+                                          <div class="card mb-3">
+                                            <div class="card-header">
+                                              <i class="fas fa-chart-bar"></i>
+                                              Rendimento Médio Por Disciplina</div>
+                                            <div class="card-body">
+                                              <canvas id="myBarChart" width="100%" height="50"></canvas>
+                                            </div>
+                                            <div class="card-footer small text-muted">Atualizado hoje às 11:59 PM</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                          <div class="card mb-3">
+                                            <div class="card-header">
+                                              <i class="fas fa-chart-pie"></i>
+                                              Rendimento Descritores BNCC - Mat.</div>
+                                            <div class="card-body">
+                                              <canvas id="myPieChart" width="100%" height="100"></canvas>
+                                            </div>
+                                            <div class="card-footer small text-muted">Atualizado hoje às 11:59 PM</div>
+                                          </div>
+                                        </div>
+                                      </div>
+                            
+                                      <p class="small text-center text-muted my-5">
+                                        <em>Mais exemplos de gráficos em breve...</em>
+                                      </p>
+                            
+                                    </div>
+                        
+                                </div>
+                        
+                                <!-- /.container-fluid -->
+                        
+                                <!-- Sticky Footer -->
+                                <footer class="sticky-footer">
+                                  <div class="container my-auto">
+                                    <div class="copyright text-center my-auto">
+                                      <span>Copyright © SENECA 2018</span>
+                                    </div>
+                                  </div>
+                                </footer>
+                        
+                              </div>
+                              <!-- /.content-wrapper -->
+                        
+                            </div>
+                            <!-- /#wrapper -->
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Seneca 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+    
+    <!-- Demo scripts for this page-->
+    <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
+    <script src="{% static 'js/demo/chart-bar-demo.js' %}"></script>
+    <script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>
+
+  </body>
+
+</html>

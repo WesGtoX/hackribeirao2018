@@ -6023,6 +6023,10 @@ button.close {
   background-color: #007bff !important;
 }
 
+.bg-primary-card {
+  background-color: #135caa !important;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {

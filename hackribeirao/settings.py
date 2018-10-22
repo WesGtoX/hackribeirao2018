@@ -77,15 +77,23 @@ WSGI_APPLICATION = 'hackribeirao.wsgi.application'
 # Database
 # https://docs.djangoproject.com/pt-br/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'hackribeirao',
+#         'USER': 'hackribeirao',
+#         'PASSWORD': 'hackribeirao',
+#         'HOST': 'hackribeirao.mysql.dbaas.com.br',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hackribeirao',
-        'USER': 'hackribeirao',
-        'PASSWORD': 'hackribeirao',
-        'HOST': 'hackribeirao.mysql.dbaas.com.br',
-        'PORT': '3306',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       # SQLITE3 SO PRECISA DO NOME NAS CONFIG
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
 }
 
 

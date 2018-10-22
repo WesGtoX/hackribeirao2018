@@ -25,8 +25,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img src="https://trello-attachments.s3.amazonaws.com/5bcbd08141242958eda62dcc/5bcc64127969e47a639d5918/fc0f69ac18f5563f58ace7cacd1e5f25/Logo3.png" 
-          alt="" style="width: 165px; height: 70px;">
+          <img src="{% static 'images/Logo3.png' %}" 
+          alt="" style="width: 140px; height: 60px; margin-left: -40px;">
         </a>
         <button class="navbar-toggler" 
         type="button" 
@@ -40,10 +40,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
@@ -63,13 +63,59 @@
       </div>
     </header>
 
+    <section id="services" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <h2>
+              <b>Serviços</b>
+            </h2>
+            <p class="lead">
+                <div class="media">
+                  <img class="mr-3" 
+                  src="{% static 'images/report.png' %}" 
+                  alt="Generic placeholder image"
+                  style="width: 100px;">
+                  <div class="media-body">
+                    <h5 class="mt-0">Relatórios e Gráficos</h5>
+                    Unindo praticidade e facilidade de acesso para obter relatórios.
+                    <br><br>
+                    <a href="/busca" class="btn btn-primary float-left">
+                      Acessar dados
+                    </a>
+                  </div>
+                </div>
+            </p>
+            <hr>
+            <p class="lead">
+                <div class="media">
+                  <img class="mr-3" 
+                  src="{% static 'images/icone-prova.png' %}" 
+                  alt="Generic placeholder image"
+                  style="width: 100px;">
+                  <div class="media-body">
+                    <h5 class="mt-0">Controle de avaliações</h5>
+                    Ajudar e automatizar o trabalho do professor.
+                    <br><br>
+                    <a href="{% url 'corrigir_prova' %}" class="btn btn-primary float-left">
+                      Acessar controle
+                    </a>
+                  </div>
+                </div>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
               <div class="card-deck">
                 <div class="card">
-                  <img class="card-img-top" src="https://png.icons8.com/ios/1600/mission-of-a-company-filled.png" alt="Card image cap">
+                  <img class="card-img-top" src="{% static 'images/company.png' %}" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">
                       <b>
@@ -84,7 +130,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img class="card-img-top" src="https://image.freepik.com/icones-gratis/visao-do-olho_318-31524.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="{% static 'images/olho.jpg' %}" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">
                       <b>VISÃO:</b>
@@ -96,7 +142,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <img class="card-img-top" src="http://www.protenorte.com.br/img/icones/icone-valores.png" alt="Card image cap">
+                  <img class="card-img-top" src="{% static 'images/valores.png' %}" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">
                         <b>VALORES:</b>
@@ -113,52 +159,6 @@
       </div>
     </section>
 
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mx-auto">
-            <h2>
-              <b>Serviços</b>
-            </h2>
-            <p class="lead">
-                <div class="media">
-                  <img class="mr-3" 
-                  src="https://icon-icons.com/icons2/1482/PNG/512/8medical-report_102120.png" 
-                  alt="Generic placeholder image"
-                  style="width: 100px;">
-                  <div class="media-body">
-                    <h5 class="mt-0">Relatórios e Gráficos</h5>
-                    Unindo praticidade e facilidade de acesso para obter relatórios.
-                    <br><br>
-                    <a href="" class="btn btn-primary float-left">
-                      Acessar dados
-                    </a>
-                  </div>
-                </div>
-            </p>
-            <hr>
-            <p class="lead">
-                <div class="media">
-                  <img class="mr-3" 
-                  src="http://fabex.edu.br/images/icone-prova.png" 
-                  alt="Generic placeholder image"
-                  style="width: 100px;">
-                  <div class="media-body">
-                    <h5 class="mt-0">Controle de avaliações</h5>
-                    Ajudar e automatizar o trabalho do professor.
-                    <br><br>
-                    <a href="" class="btn btn-primary float-left">
-                      Acessar controle
-                    </a>
-                  </div>
-                </div>
-            </p>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -169,12 +169,12 @@
             <p class="lead">
                 Nos encontre nas redes sociais, procure por Sêneca!
                 <br><br>
-               <img src="http://glorinhacohen.com.br/wp-content/themes/opinions/timthumb.php?src=http://glorinhacohen.com.br/wp-content/uploads/2017/01/Icone-FACE.png&q=90&w=660&zc=1" 
+               <img src="{% static 'images/insta.jpg' %}" 
                alt=""
                style="width: 50px;"> 
                Instagram -> @Seneca
                 <br>
-                <img src="https://image.freepik.com/vetores-gratis/instagram-icone-novo_1057-2227.jpg" 
+                <img src="{% static 'images/face.png' %}" 
                 alt=""
                 style="width: 60px;"> 
                Facebook -> Seneca.edu
