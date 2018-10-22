@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
+    'geracao_prova',
+    'correcao_prova',
 ]
 
 MIDDLEWARE = [
@@ -75,15 +77,23 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'hackribeirao',
+#         'USER': 'hackribeirao',
+#         'PASSWORD': 'hackribeirao',
+#         'HOST': 'hackribeirao.mysql.dbaas.com.br',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hackribeirao',
-        'USER': 'hackribeirao',
-        'PASSWORD': 'hackribeirao',
-        'HOST': 'hackribeirao.mysql.dbaas.com.br',
-        'PORT': '3306',
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       # SQLITE3 SO PRECISA DO NOME NAS CONFIG
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
 }
 
 
@@ -127,3 +137,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'static'
 ]
+
+# #CONFIGURANDO O CAMINHO DA PASTA ONDE SERÁ SALVA AS IMAGENS;
+# #CONFIGURANDO A DISPOSIÇÃO DAS IMAGENS, NA PASTA.
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join('media')
+
+# TEMPLATE_DIRS = (
+#     BASE_DIR + '/templates/',
+# )
