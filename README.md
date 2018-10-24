@@ -27,6 +27,6 @@ Projects initially developed in [Hackribeirão 2018](https://www.facebook.com/ev
 **• Henrique (Professor)**  
 [GitHub]() | [LinkedIn]()
 
-### License ###
+## License ##
 
 [MIT](LICENSE)
