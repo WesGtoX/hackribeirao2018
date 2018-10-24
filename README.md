@@ -1,9 +1,31 @@
-# Hackribeirão 2018
+![](static/images/Logo3.png)
+<p align="center">
+   <a href="https://github.com/WesGtoX/hackribeirao2018">
+     <img src="static/images/Logo3.png" alt="Seneca" title="Seneca" width="170">
+   </a>
+</p>
+
+-----------------
+
+# Seneca | Hackribeirão 2018
 
 Projects initially developed in Hackribeirão 2018.
 
 Authors:
-[Wesley Mendes](https://github.com/WesGtoX) | [Wendrew Oliveira](https://github.com/wendrewdevelop) | [Gabriel Pestrini](https://github.com/Pestrini)
+• Wesley Mendes
+[GitHub](https://github.com/WesGtoX) | [LinkedIn](https://www.linkedin.com/in/wesgtox/) | [Site](https://wesleymends.com.br)
+
+• Wendrew Oliveira
+[GitHub](https://github.com/wendrewdevelop) | [LinkedIn](https://www.linkedin.com/in/wendrew-oliveira-31252411a/)
+
+• Gabriel Pestrini
+[GitHub](https://github.com/Pestrini) | [LinkedIn](https://www.linkedin.com/in/pestrini/)
+
+• Samuel Fernandes
+[GitHub](https://github.com/samuelcdias) | [LinkedIn]()
+
+• Henrique (Professor)
+[GitHub]() | [LinkedIn]()
 
 ### License ###
 
