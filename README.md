@@ -10,20 +10,20 @@
 
 Projects initially developed in Hackribeirão 2018.
 
-## Authors:
-• Wesley Mendes  
+## Authors: ##
+**• Wesley Mendes**  
 [GitHub](https://github.com/WesGtoX) | [LinkedIn](https://www.linkedin.com/in/wesgtox/) | [Site](https://wesleymends.com.br)
 
-• Wendrew Oliveira  
+**• Wendrew Oliveira**  
 [GitHub](https://github.com/wendrewdevelop) | [LinkedIn](https://www.linkedin.com/in/wendrew-oliveira-31252411a/)
 
-• Gabriel Pestrini  
+**• Gabriel Pestrini**  
 [GitHub](https://github.com/Pestrini) | [LinkedIn](https://www.linkedin.com/in/pestrini/)
 
-• Samuel Fernandes  
+**• Samuel Fernandes**  
 [GitHub](https://github.com/samuelcdias) | [LinkedIn]()
 
-• Henrique (Professor)  
+**• Henrique (Professor)**  
 [GitHub]() | [LinkedIn]()
 
 ### License ###
