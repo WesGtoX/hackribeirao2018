@@ -1,16 +1,17 @@
 <p align="center">
    <a href="https://github.com/WesGtoX/hackribeirao2018">
-     <img src="static/images/Logo3.png" alt="Seneca" title="Seneca" width="500">
+     <img src="static/images/Logo3.png" alt="Seneca" title="Seneca" width="400">
    </a>
 </p>
 
 -----------------
 
-# Seneca | Hackribeirão 2018
+# Seneca - Soluções Educacionais
 
-Projects initially developed in Hackribeirão 2018.
+Projects initially developed in [Hackribeirão 2018](https://www.facebook.com/events/690086488013665/).
 
-## Authors: ##
+## Authors ##
+
 **• Wesley Mendes**  
 [GitHub](https://github.com/WesGtoX) | [LinkedIn](https://www.linkedin.com/in/wesgtox/) | [Site](https://wesleymends.com.br)
 
