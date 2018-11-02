@@ -13,19 +13,19 @@ Projects initially developed in [Hackribeirão 2018](https://www.facebook.com/ev
 ## Authors ##
 
 **• Wesley Mendes**  
-[GitHub](https://github.com/WesGtoX) | [LinkedIn](https://www.linkedin.com/in/wesgtox/) | [Site](https://wesleymends.com.br)
+[GitHub](https://github.com/WesGtoX) | [LinkedIn](https://www.linkedin.com/in/wesgtox/) | [Site](https://wesleymends.com.br)  
 
 **• Wendrew Oliveira**  
-[GitHub](https://github.com/wendrewdevelop) | [LinkedIn](https://www.linkedin.com/in/wendrew-oliveira-31252411a/)
+[GitHub](https://github.com/wendrewdevelop) | [LinkedIn](https://www.linkedin.com/in/wendrew-oliveira-31252411a/)  
 
 **• Gabriel Pestrini**  
-[GitHub](https://github.com/Pestrini) | [LinkedIn](https://www.linkedin.com/in/pestrini/)
+[GitHub](https://github.com/Pestrini) | [LinkedIn](https://www.linkedin.com/in/pestrini/)  
 
 **• Samuel Fernandes**  
-[GitHub](https://github.com/samuelcdias) | [LinkedIn]()
+[GitHub](https://github.com/samuelcdias) | [LinkedIn]()  
 
 **• Henrique (Professor)**  
-[GitHub]() | [LinkedIn]()
+[GitHub]() | [LinkedIn]()  
 
 ## License ##
 
